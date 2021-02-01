@@ -1,7 +1,10 @@
-const { Schema, model}  = require("mongoose");
+const { Schema, model } = require("mongoose");
 
-const TodoSchema = new Schema({
-  todo: []
-})
+const TodoSchema = new Schema(
+	{
+		todo: String,
+	},
+	{ timestamps: true }
+);
 
-module.exports = model('todoer', TodoSchema)
+module.exports = model("todoer", TodoSchema);

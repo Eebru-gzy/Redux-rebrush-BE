@@ -12,9 +12,9 @@ app.use(morgan('tiny'));
 app.use(cors());
 
 
-app.get('/', (req, res)=> {
-  res.send('Hello Spending, Welcome to Todoer')
-})
+// app.get('/', (req, res)=> {
+//   res.send('Hello Spending, Welcome to Todoer')
+// })
 app.use('/', router)
 
   const PORT = 7000;
